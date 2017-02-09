@@ -6,9 +6,11 @@
     public $agencia;
     public $extrato;
 
-    public function __construct($numero){
+    public function __construct($numero,$agencia){
       $this->numero = $numero;
-      $this->limit = 100;
+      $this->agencia = $agencia;
+      $this->saldo = 0;
+      $this->limite = 100;
       $this->extrato = "-INICIO DA CONTA-\n";
     }
 

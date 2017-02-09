@@ -1,7 +1,7 @@
 <?php
   require_once 'Conta.php';
 
-  $conta = new Conta(123);
+  $conta = new Conta(123,1);
   // $conta->numero = 13;
 
   //Depósito de 700
@@ -32,10 +32,8 @@
   }
 
   // echo "Saldo após saque: $conta->saldo" . PHP_EOL;
-
   // var_dump($conta->$extrato);
-
-  $extrato = $conta->imprimeExtrato();
+  // $extrato = $conta->imprimeExtrato();
   //
   echo "Extrato: \n{$conta->imprimeExtrato()}" . PHP_EOL;
   echo "Saldo: {$conta->consultaSaldoDisponivel()}" . PHP_EOL;
